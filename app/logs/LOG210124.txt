@@ -1,0 +1,80 @@
+[00:39:43] sheets v4 service created successfully.
+[00:39:44] drive v3 service created successfully.
+[00:39:48] created file: 1-L0WhKujXTumkVsFBkBepevD902o9A0mug0L9xI5EyM
+[00:42:24] updated sheet: report_sale_210124_1 with 10 rows.
+[01:06:05] sheets v4 service created successfully.
+[01:06:06] drive v3 service created successfully.
+[01:37:31] sheets v4 service created successfully.
+[01:37:32] drive v3 service created successfully.
+[01:37:33] file report_sale_210124 already exists.
+[01:54:24] sheets v4 service created successfully.
+[01:54:25] drive v3 service created successfully.
+[01:54:26] file report_sale_210124 already exists.
+[01:55:13] sheets v4 service created successfully.
+[01:55:14] drive v3 service created successfully.
+[01:55:15] file report_sale_210124 already exists.
+[01:55:33] sheets v4 service created successfully.
+[01:55:34] drive v3 service created successfully.
+[01:55:35] file report_sale_210124 already exists.
+[02:03:06] sheets v4 service created successfully.
+[02:03:07] drive v3 service created successfully.
+[02:03:08] file report_sale_210124 already exists.
+[02:08:32] sheets v4 service created successfully.
+[02:08:33] drive v3 service created successfully.
+[02:08:34] file report_sale_210124 already exists.
+[02:09:09] updated sheet: report_sale_210124_1 with 106021 rows.
+[02:09:30] updated sheet: report_sale_210124_2 with 68289 rows.
+[02:10:31] sheets v4 service created successfully.
+[02:10:32] drive v3 service created successfully.
+[02:10:33] file report_sale_210124 already exists.
+[02:12:22] sheets v4 service created successfully.
+[02:12:22] drive v3 service created successfully.
+[02:12:27] created file: 1DiYm6t53coT0cXOoMeeazfGynFrZsUkkATxFlHGzbss
+[02:13:40] sheets v4 service created successfully.
+[02:13:41] drive v3 service created successfully.
+[02:13:42] file report_sale_210124 already exists.
+[02:13:59] sheets v4 service created successfully.
+[02:14:00] drive v3 service created successfully.
+[02:14:01] file report_sale_210124 already exists.
+[02:14:26] sheets v4 service created successfully.
+[02:14:27] drive v3 service created successfully.
+[02:14:28] file report_sale_210124 already exists.
+[02:14:41] sheets v4 service created successfully.
+[02:14:42] drive v3 service created successfully.
+[02:14:43] file report_sale_210124 already exists.
+[02:14:59] sheets v4 service created successfully.
+[02:15:00] drive v3 service created successfully.
+[02:15:01] file report_sale_210124 already exists.
+[02:18:09] sheets v4 service created successfully.
+[02:18:10] drive v3 service created successfully.
+[02:18:11] file report_sale_210124 already exists.
+[02:20:46] sheets v4 service created successfully.
+[02:20:47] drive v3 service created successfully.
+[02:20:51] created file: 1pU218gzYvb-V73YRuNhstrP9PJMK3ZUf1Cz4wwSEIxE
+[02:23:59] sheets v4 service created successfully.
+[02:24:00] drive v3 service created successfully.
+[02:24:04] created file: 1qZOllUhvLXAJCkRvgIFLZ6KjcFYiVWwyjMGI3lKuz98
+[02:24:48] updated sheet: report_sale_210124_1 with 106021 rows.
+[02:25:15] updated sheet: report_sale_210124_2 with 68289 rows.
+[20:51:25] sheets v4 service created successfully.
+[20:51:27] drive v3 service created successfully.
+[20:57:20] sheets v4 service created successfully.
+[20:57:21] drive v3 service created successfully.
+[20:57:22] file report_sale_210124 already exists.
+[20:58:20] updated sheet: report_sale_210124_1 with 106021 rows.
+[20:58:54] updated sheet: report_sale_210124_2 with 68289 rows.
+[21:12:34] sheets v4 service created successfully.
+[21:12:35] drive v3 service created successfully.
+[21:13:26] sheets v4 service created successfully.
+[21:13:27] drive v3 service created successfully.
+[21:13:34] file report_sale_210124 already exists.
+[21:14:41] sheets v4 service created successfully.
+[21:14:42] drive v3 service created successfully.
+[22:21:39] sheets v4 service created successfully.
+[22:21:41] drive v3 service created successfully.
+[22:21:45] created file: 19ipKn3981jvsgOyiAcqOR7wNTnLJAaFD4lNTQJdlwWU
+[22:24:01] sheets v4 service created successfully.
+[22:24:02] drive v3 service created successfully.
+[22:24:03] file report_sale_210124 already exists.
+[22:24:41] updated sheet: report_sale_210124_1 with 106021 rows.
+[22:25:05] updated sheet: report_sale_210124_2 with 68289 rows.
