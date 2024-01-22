@@ -1,4 +1,6 @@
 import pandas as pd
+import datetime
+import os
 
 def processing(df):
     # convert to datetime
@@ -23,18 +25,24 @@ def split_dataframe(df):
     return dat_booking, dat_not_booking
 
 def getdf():
-    df_bg = pd.read_csv("./report_sale/BG.csv")
-    df_bn = pd.read_csv("./report_sale/BN.csv")
-    df_kb = pd.read_csv("./report_sale/Kim Boi.csv")
-    df_mn = pd.read_csv("./report_sale/MuiNe.csv")
-    df_py = pd.read_csv("./report_sale/PhuYen.csv")
-    df_bg["khu_vuc"] = "Bắc Giang"
-    df_bn["khu_vuc"] = "Bắc Ninh"
-    df_kb["khu_vuc"] = "Kim Bôi"
-    df_mn["khu_vuc"] = "Mũi Né"
-    df_py["khu_vuc"] = "Phú Yên"
-    df_all = pd.concat([df_bg, df_bn, df_kb, df_mn, df_py], ignore_index=True)
-    df_all = processing(df_all)
+    today = datetime.date.today().strftime('%Y%m%d')
+    folder_path = f'./report_sale/{today}'
+    dfs = []
+
+    for file_name in os.listdir(folder_path):
+        if file_name.endswith('.csv'):
+            file_path = os.path.join(folder_path, file_name)
+            
+            df = pd.read_csv(file_path)
+            
+            file_name_without_extension = os.path.splitext(file_name)[0]
+            
+            df['location'] = file_name_without_extension
+            
+            dfs.append(df)
+
+    combined_data = pd.concat(dfs, ignore_index=True)
+    
+    df_all = processing(combined_data)
     df_booking, df_no_booking = split_dataframe(df_all)
     return df_booking, df_no_booking
-    

@@ -14,8 +14,8 @@ from processing_data import getdf
 # Google API authentication and file paths
 SCOPES = ['https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/spreadsheets']
 SERVICE_ACCOUNT_FILE = "service_account.json"
-# PARENT_FOLDER_ID = "1n1dGgRSYgxQfOZI36jzGYHw8ITzDyyHJ"
-PARENT_FOLDER_ID = "1C2fYye72mY5pQeHaZtg4r-_S4to_fpHk"
+PARENT_FOLDER_ID = "1n1dGgRSYgxQfOZI36jzGYHw8ITzDyyHJ"
+# PARENT_FOLDER_ID = "1C2fYye72mY5pQeHaZtg4r-_S4to_fpHk"
 STATUS_FILE = "./check_point/status.txt"
 
 # Get dataframes from the processing_data module
@@ -38,9 +38,12 @@ def load_status():
         with open(STATUS_FILE, 'r') as txtfile:
             lines = txtfile.readlines()
             for line in lines:
-                file_name, uploaded, timestamp_str = line.strip().split(',')
-                timestamp = dt.strptime(timestamp_str, '%Y-%m-%d %H:%M:%S').replace(tzinfo=pytz.timezone('Asia/Ho_Chi_Minh'))
-                status[file_name] = {'uploaded': uploaded, 'timestamp': timestamp}
+                try:
+                    file_name, uploaded, timestamp_str = line.strip().split(',')
+                    timestamp = dt.strptime(timestamp_str, '%Y-%m-%d %H:%M:%S').replace(tzinfo=pytz.timezone('Asia/Ho_Chi_Minh'))
+                    status[file_name] = {'uploaded': uploaded, 'timestamp': timestamp}
+                except ValueError as e:
+                    print(f"Error processing line: {line.strip()}. Error: {e}")
     return status
 
 # Save status to a file
