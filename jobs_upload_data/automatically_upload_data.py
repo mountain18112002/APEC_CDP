@@ -38,8 +38,9 @@ def load_status():
         with open(STATUS_FILE, 'r') as txtfile:
             lines = txtfile.readlines()
             for line in lines:
-                file_name, uploaded, timestamp = line.strip().split(',')
-                status[file_name] = {'uploaded': uploaded, 'timestamp': dt.fromtimestamp(float(timestamp))}
+                file_name, uploaded, timestamp_str = line.strip().split(',')
+                timestamp = dt.strptime(timestamp_str, '%Y-%m-%d %H:%M:%S').replace(tzinfo=pytz.timezone('Asia/Ho_Chi_Minh'))
+                status[file_name] = {'uploaded': uploaded, 'timestamp': timestamp}
     return status
 
 # Save status to a file
