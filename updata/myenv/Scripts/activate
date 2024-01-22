@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\APEC_GR\updata\myenv"
+VIRTUAL_ENV="D:\APEC_GR\APEC_CDP\updata\myenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
